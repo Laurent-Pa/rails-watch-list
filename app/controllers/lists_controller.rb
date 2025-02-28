@@ -9,9 +9,6 @@ class ListsController < ApplicationController
 
   def show
    @list = List.find(params[:id])
-  #  @choix = Bookmark.find_each(params[:id])
-  #  @bookmarks = Bookmark.select { |bookmark| bookmark.list_id == params[:id] }
-  #  raise
   end
 
   def create

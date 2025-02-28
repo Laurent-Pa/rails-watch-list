@@ -1,7 +1,7 @@
 <h1><%= @list.name %></h1>
 <ul>
-  <% @list.bookmark.each do |bookmark| %>
-    <li><%= bookmark %></li>
+  <% @list.bookmarks.each do |bookmark| %>
+    <li><%= bookmark.comment%></li>
     <% end %>
 </ul>
 <p><%= link_to "Back to all lists", lists_path %></p>
