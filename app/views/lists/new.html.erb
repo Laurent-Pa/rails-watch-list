@@ -1,0 +1,9 @@
+<div class="container w-50">
+  <h1>You can create a new list</h1>
+  <%= simple_form_for @list do |f| %>
+    <%= f.input :name %>
+    <%#= f.association :movies,   as: :check_boxes %>
+    <%= f.submit "Save my list", class: "btn btn-primary" %>
+  <% end %>
+</div>
+<p><%= link_to "Back to all lists", lists_path %></p>

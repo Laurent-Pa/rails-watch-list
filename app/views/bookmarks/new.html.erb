@@ -1,0 +1,9 @@
+<div class="container w-50">
+  <h1>You can add a bookmark to: <%#= @list.name %></h1>
+
+  <%= simple_form_for [@list, @bookmark] do |f| %>
+    <%= f.input :comment %>
+    <%= f.association :movie, collection: Movie.all%> <%# as: :check_boxes  %>
+    <%= f.submit "Save my bookmark", class: "btn btn-primary" %>
+  <% end %>
+</div>
